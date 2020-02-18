@@ -1,6 +1,6 @@
 
 const firstFunction = () => {
-    console.log('changed the format of logs');
+    console.log('test and build succeded!');
 }
 
 module.exports = {
