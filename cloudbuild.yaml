@@ -1,8 +1,9 @@
+# [START functions_ci_cd_cloud_build_nodejs]
 steps:
     - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
-
-    -name: 'gcr.io/cloud-builders/npm'
-    args: ['run','test:unit']
+      args: ['install']
     - name: 'gcr.io/cloud-builders/npm'
-    args: ['run','build']    
+      args: ['test']
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['run', 'build']
+# [END functions_ci_cd_cloud_build_nodejs]
