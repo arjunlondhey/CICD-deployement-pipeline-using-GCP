@@ -1,9 +1,1 @@
 runtime: nodejs10
-
-env_variables:
-  BUCKET_NAME: "gcs-bucket"
-
-
-- url: /.*
-  redirect_http_response_code: 301
-  script: auto
